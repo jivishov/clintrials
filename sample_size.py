@@ -1,5 +1,6 @@
 import streamlit as st
 import math
+import scipy.stats
 from scipy.stats import norm
 
 # Function to calculate sample size
