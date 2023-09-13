@@ -1,5 +1,5 @@
 scipy==1.11
-streamlit==23.2.1
+streamlit
 math
 pandas
 matplotlib.pyplot
