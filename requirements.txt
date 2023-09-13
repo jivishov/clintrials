@@ -1,4 +1,4 @@
-scipy==1.11
+scipy
 streamlit
 math
 pandas
