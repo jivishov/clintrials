@@ -9,6 +9,8 @@ st.title("Independent t-test Calculator")
 # st.sidebar.title("Menu")
 # st.sidebar.text("Future options will go here.")
 
+st.markdown('<a href="https://drive.google.com/drive/folders/1Fo3vRuh0MMHw8iHipQk8jaWnEiErRZ8L?usp=drive_link" target="_blank">Download sample datasets/Nümunə verilənləri endirin</a>', unsafe_allow_html=True)
+
 # Upload CSV file
 uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
 
