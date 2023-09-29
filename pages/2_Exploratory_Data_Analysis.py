@@ -32,6 +32,8 @@ if uploaded_file is not None:
     st.write(df)
     st.write('---')
     st.header('**Verilənlərin Profil Təhlili Hesabatı**')
+    import os
+    os.system('pip install streamlit_pandas_profiling')
     st_profile_report(pr)
 else:
     st.info('Awaiting for CSV file to be uploaded/CSV faylın yüklənməsini gözləyir...')
@@ -43,6 +45,8 @@ else:
     else:
         url="https://raw.githubusercontent.com/jivishov/clintrials/main/sample_datasets/cancer_dataset.csv"
     if st.button('Press to use Example Dataset/Nümunə verilənləri işlət'):
+        import os
+        os.system('pip install streamlit_pandas_profiling')
         # Example data        
         @st.cache_data     
         def load_data():
