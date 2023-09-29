@@ -25,13 +25,13 @@ if uploaded_file is not None:
         return csv
     df = load_csv()
     pr = ProfileReport(df, explorative=True,plot={"dpi": 500, "image_format": "png"})
-    st.header('**Input DataFrame**')
+    st.header('**Input Data/Daxil edilən verilənlər**')
     st.write(df)
     st.write('---')
     st.header('**Verilənlərin Profil Təhlili Hesabatı**')
     st_profile_report(pr)
 else:
-    st.info('Awaiting for CSV file to be uploaded/CSV faylın yükləyinməsini gözləyir...')
+    st.info('Awaiting for CSV file to be uploaded/CSV faylın yüklənməsini gözləyir...')
     url=""
     choice=st.radio("Choose sample dataset to load/Nümünə verilənləri yükləmək üçün seçin",
                     ["European Drug Development","USA Cancer Statistics, 1999-2020 Mortality Incidence Rate Ratios Results"])
