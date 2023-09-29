@@ -1,0 +1,62 @@
+ERROR: Cannot install -r /app/clintrials/requirements.txt (line 7) and -r /app/clintrials/requirements.txt (line 8) because these package versions have conflicting dependencies.
+
+
+The conflict is caused by:
+
+    pandas-profiling 3.0.0 depends on visions[type_image_path]==0.7.1
+
+    ydata-profiling 4.5.1 depends on visions[type_image_path]==0.7.5
+
+    pandas-profiling 3.0.0 depends on visions[type_image_path]==0.7.1
+
+    ydata-profiling 4.5.0 depends on visions[type_image_path]==0.7.5
+
+    pandas-profiling 3.0.0 depends on visions[type_image_path]==0.7.1
+
+    ydata-profiling 4.4.0 depends on visions[type_image_path]==0.7.5
+
+    pandas-profiling 3.0.0 depends on visions[type_image_path]==0.7.1
+
+    ydata-profiling 4.3.2 depends on visions[type_image_path]==0.7.5
+
+    pandas-profiling 3.0.0 depends on visions[type_image_path]==0.7.1
+
+    ydata-profiling 4.3.1 depends on visions[type_image_path]==0.7.5
+
+    pandas-profiling 3.0.0 depends on visions[type_image_path]==0.7.1
+
+    ydata-profiling 4.3.0 depends on visions[type_image_path]==0.7.5
+
+    pandas-profiling 3.0.0 depends on visions[type_image_path]==0.7.1
+
+    ydata-profiling 4.2.0 depends on visions[type_image_path]==0.7.5
+
+    pandas-profiling 3.0.0 depends on visions[type_image_path]==0.7.1
+
+    ydata-profiling 4.1.2 depends on visions[type_image_path]==0.7.5
+
+    pandas-profiling 3.0.0 depends on visions[type_image_path]==0.7.1
+
+    ydata-profiling 4.1.1 depends on visions[type_image_path]==0.7.5
+
+    pandas-profiling 3.0.0 depends on visions[type_image_path]==0.7.1
+
+    ydata-profiling 4.1.0 depends on visions[type_image_path]==0.7.5
+
+
+To fix this you could try to:
+
+1. loosen the range of package versions you've specified
+
+2. remove package versions to allow pip attempt to solve the dependency conflict
+
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+
+WARNING: You are using pip version 22.0.3; however, version 23.2.1 is available.
+
+You should consider upgrading via the '/home/appuser/venv/bin/python -m pip install --upgrade pip' command.
+
+Checking if Streamlit is installed
+
+Found Streamlit version 1.27.1 in the environment
