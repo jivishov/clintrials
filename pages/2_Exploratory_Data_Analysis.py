@@ -17,6 +17,9 @@ st.markdown("""
 [Example CSV input file](https://raw.githubusercontent.com/jivishov/clintrials/main/sample_datasets/cancer_dataset.csv)
 """)
 
+import os
+os.system('pip install streamlit_pandas_profiling')
+
 # Pandas Profiling Report
 if uploaded_file is not None:
     @st.cache_data
