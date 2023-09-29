@@ -1,6 +1,5 @@
 scipy
 streamlit
-pandas
 matplotlib
 lifelines
 openai
