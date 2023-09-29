@@ -4,4 +4,4 @@ matplotlib
 lifelines
 openai
 pandas
-streamlit-data-profiling
+ydata_profiling
