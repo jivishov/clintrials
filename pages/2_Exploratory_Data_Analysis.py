@@ -25,7 +25,7 @@ if uploaded_file is not None:
         return csv
     df = load_csv()
     pr = ProfileReport(df, explorative=True,plot={"dpi": 500, "image_format": "png"})
-    st.header('**Input Data/Daxil edilən verilənlər**')
+    st.header('**Input data/Daxil edilən verilənlər**')
     st.write(df)
     st.write('---')
     st.header('**Verilənlərin Profil Təhlili Hesabatı**')
