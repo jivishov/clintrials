@@ -4,3 +4,4 @@ matplotlib
 lifelines
 openai
 pandas
+ydata_profiling
