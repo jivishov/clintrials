@@ -14,7 +14,7 @@ st.markdown('''
 st.header('1. Upload your CSV data/Verilənləri CSV formatında  yükləyin')
 uploaded_file = st.file_uploader("Upload your input CSV file/CSV formatında faylı yükləyin", type=["csv"])
 st.markdown("""
-[Example CSV input file](https://raw.githubusercontent.com/jivishov/clintrials/main/sample_datasets/cancer_dataset.csv)
+[Example CSV input file/Nümunə format ve verilənlər](https://raw.githubusercontent.com/jivishov/clintrials/main/sample_datasets/cancer_dataset.csv)
 """)
 
 import os
