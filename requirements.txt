@@ -5,5 +5,4 @@ lifelines
 openai
 pandas
 pandas_profiling
-ydata_profiling
 streamlit_pandas_profiling
