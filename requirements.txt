@@ -5,3 +5,4 @@ lifelines
 openai
 ydata_profiling
 streamlit_pandas_profiling
+Jinja2
