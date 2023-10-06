@@ -2,6 +2,7 @@ import streamlit as st
 import math
 import scipy.stats
 from scipy.stats import norm
+from utils import add_copyright
 
 utils.add_copyright()
 # Function to calculate sample size
