@@ -1,5 +1,5 @@
 import openai
-from streamlit import secrets
+from streamlit import secrets, markdown
 
 openai.api_key = secrets["CT-OPENAI_API_KEY"]
 def GPT4_Interpretation(test_name, test_specific_content):
@@ -15,4 +15,4 @@ def GPT4_Interpretation(test_name, test_specific_content):
     return response
 
 def add_copyright():
-    st.markdown('<a href="https://www.linkedin.com/in/jivishov/" target="_blank">© Emil Jivishov</a>', unsafe_allow_html=True)
+    markdown('<a href="https://www.linkedin.com/in/jivishov/" target="_blank">© Emil Jivishov</a>', unsafe_allow_html=True)
