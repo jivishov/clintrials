@@ -4,7 +4,7 @@ import scipy.stats
 from scipy.stats import norm
 from utils import add_copyright
 
-utils.add_copyright()
+add_copyright()
 # Function to calculate sample size
 def calculate_sample_size(alpha, power, effect_size, allocation_ratio=1):
     z_alpha = norm.ppf(1 - alpha / 2)
