@@ -3,6 +3,7 @@ import math
 import scipy.stats
 from scipy.stats import norm
 
+utils.add_copyright()
 # Function to calculate sample size
 def calculate_sample_size(alpha, power, effect_size, allocation_ratio=1):
     z_alpha = norm.ppf(1 - alpha / 2)
@@ -23,7 +24,7 @@ st.title("Clinical Trial Sample Size Calculator")
 #st.sidebar.markdown('<a href="https://www.linkedin.com/in/jivishov/" target="_blank">© Emil Jivishov</a>', unsafe_allow_html=True)
 #st.sidebar.title("Menu")
 # st.sidebar.text("Future options will go here.")
-utils.add_copyright()
+
 # Main content
 st.header("Sample Size Calculation")
 
