@@ -19,10 +19,10 @@ def add_copyright():
 """
         <style>
             [data-testid="stSidebar"]::before {
-                content: "© Emil Jivishov" url(https://www.linkedin.com/in/jivishov/);
+                content: "© Emil Jivishov" url(https://www.linkedin.com/in/jivishov/) "Profile";
                 margin-left: 20px;
                 margin-top: 20px;
-                font-size: 20px;
+                font-size: 30px;
                 position: relative;
                 top: 50px;
             }
