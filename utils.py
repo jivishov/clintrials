@@ -19,7 +19,7 @@ def add_copyright():
         """
         <style>
             [data-testid="stSidebar"]::before {
-                content: '<a href="https://www.linkedin.com/in/jivishov/" target="_blank">© Emil Jivishov</a>';
+                content: "<a href='https://www.linkedin.com/in/jivishov/' target='_blank'>© Emil Jivishov</a>";
                 margin-left: 20px;
                 margin-top: 20px;
                 font-size: 14px;
