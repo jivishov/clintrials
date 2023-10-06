@@ -73,20 +73,32 @@ if uploaded_file is not None:
 
             cox_results_text = cph.summary.to_csv()
 
-            # Call the GPT-4 API for interpretation
-            openai.api_key = st.secrets["CT-OPENAI_API_KEY"]
+
+            # GPT-4 interpretation
             with st.spinner("GPT-4 is analysing your results..."):
-                response = openai.ChatCompletion.create(
-                model="gpt-4",
-                messages=[
-                    {"role": "system", "content": "You will be provided with the CSV format results of Cox regression test of a clinical trial and your task is to explain them in a concise way."},
-                    {"role": "user", "content": f"Here are the results of the Cox regression test:{cox_results_text}"}
-                ],
-                temperature=0.7,
-                max_tokens=1024
+                gpt4_response = utils.GPT4_Interpretation(
+                    "Cox regression",
+                    f"Results of the Cox regression test:{cox_results_text}"
                 )
+            
+            st.subheader("GPT-4's Interpretation:")
+            st.write(f"{gpt4_response.choices[0].message.content}")
+
+            
+            # Call the GPT-4 API for interpretation
+            # openai.api_key = st.secrets["CT-OPENAI_API_KEY"]
+            # with st.spinner("GPT-4 is analysing your results..."):
+                # response = openai.ChatCompletion.create(
+                # model="gpt-4",
+                # messages=[
+                   #  {"role": "system", "content": "You will be provided with the CSV format results of Cox regression test of a clinical trial and your task is to explain them in a concise way."},
+                    # {"role": "user", "content": f"Here are the results of the Cox regression test:{cox_results_text}"}
+                # ],
+                # temperature=0.7,
+                # max_tokens=1024
+                # )
 
             # Display GPT-4's interpretation
-            gpt4_interpretation = response.choices[0].message.content
-            st.subheader("GPT-4's Interpretation:")
-            st.write(f"{gpt4_interpretation}")
+            # gpt4_interpretation = response.choices[0].message.content
+            # st.subheader("GPT-4's Interpretation:")
+            # st.write(f"{gpt4_interpretation}")
