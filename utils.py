@@ -15,4 +15,19 @@ def GPT4_Interpretation(test_name, test_specific_content):
     return response
 
 def add_copyright():
-    markdown('<a href="https://www.linkedin.com/in/jivishov/" target="_blank">© Emil Jivishov</a>', unsafe_allow_html=True)
+    markdown(
+"""
+        <style>
+            [data-testid="stSidebar"]::before {
+                content: "© Emil Jivishov" url(https://www.linkedin.com/in/jivishov/);
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: 12px;
+                position: relative;
+                top: 100px;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+    #markdown('<a href="https://www.linkedin.com/in/jivishov/" target="_blank">© Emil Jivishov</a>', unsafe_allow_html=True)
