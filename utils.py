@@ -22,7 +22,7 @@ def add_copyright():
                 content: "© Emil Jivishov" url(https://www.linkedin.com/in/jivishov/) "Profile";
                 margin-left: 20px;
                 margin-top: 20px;
-                font-size: 30px;
+                font-size: 13px;
                 position: relative;
                 top: 50px;
             }
