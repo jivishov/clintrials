@@ -13,3 +13,6 @@ def GPT4_Interpretation(test_name, test_specific_content):
                 max_tokens=1024
             )
     return response
+
+def add_copyright():
+    st.markdown('<a href="https://www.linkedin.com/in/jivishov/" target="_blank">© Emil Jivishov</a>', unsafe_allow_html=True)
