@@ -16,18 +16,31 @@ def GPT4_Interpretation(test_name, test_specific_content):
 
 def add_copyright():
     markdown(
-"""
+        """
         <style>
             [data-testid="stSidebar"]::before {
-                content: "© Emil Jivishov" url(https://www.linkedin.com/in/jivishov/) "Profile";
+                content: "© Emil Jivishov";
                 margin-left: 20px;
                 margin-top: 20px;
-                font-size: 13px;
+                font-size: 14px;
                 position: relative;
                 top: 50px;
+                cursor: pointer;
             }
         </style>
-        """,
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let sidebar = document.querySelector('[data-testid="stSidebar"]');
+                if (sidebar) {
+                    sidebar.addEventListener('click', function(event) {
+                        if (event.target.textContent === "© Emil Jivishov") {
+                            window.open("https://www.linkedin.com/in/jivishov/", "_blank");
+                        }
+                    });
+                }
+            });
+        </script>
+       """,
         unsafe_allow_html=True,
     )
     #markdown('<a href="https://www.linkedin.com/in/jivishov/" target="_blank">© Emil Jivishov</a>', unsafe_allow_html=True)
