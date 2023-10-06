@@ -20,7 +20,8 @@ def calculate_sample_size(alpha, power, effect_size, allocation_ratio=1):
 st.title("Clinical Trial Sample Size Calculator")
 
 # Sidebar for future menu options
-# st.sidebar.title("Menu")
+st.sidebar.markdown('<a href="https://www.linkedin.com/in/jivishov/" target="_blank">© Emil Jivishov</a>', unsafe_allow_html=True)
+st.sidebar.title("Menu")
 # st.sidebar.text("Future options will go here.")
 
 # Main content
