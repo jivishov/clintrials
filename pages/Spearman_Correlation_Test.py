@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import scipy.stats
 import openai
-import utils  # Assuming you have utils for GPT-4 function
+import utils 
 
 # Streamlit App
 st.title("Spearman Correlation for Clinical Trials")
